@@ -1,7 +1,7 @@
 {
-  "name": "logbook-orea85-vanilla",
+  "name": "Catatan Harian Komisi Treatment",
   "version": "1.0.0",
-  "description": "Catatan Harian Komisi Treatment - Vanilla JavaScript untuk Vercel",
+  "description": "Aplikasi web untuk pencatatan komisi treatment terapis dengan luxury design dan fitur lengkap",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 3000",
