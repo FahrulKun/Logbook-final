@@ -121,7 +121,7 @@ Aplikasi pencatatan komisi treatment therapist yang modern dengan fitur PWA (Pro
 ### **Development**
 ```bash
 # Clone repository
-git clone https://github.com/orea-85/komisi-treatment-app.git
+git clone https://github.com/FahrulKun/Logbook-orea85.git
 
 # Install dependencies
 cd komisi-treatment-app
