@@ -589,7 +589,7 @@ const openSharePreview = (data: LogEntry[]) => {
             <img 
               src="/logo.png" 
               alt="OREA 85 Logo" 
-              className="h-20 w-auto object-contain"
+              className="h-20 w-20 object-cover rounded-full border-4 border-amber-200 shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
             />
           </div>
           <h1 className="text-5xl font-light tracking-tight text-amber-900">
