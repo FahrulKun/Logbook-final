@@ -585,6 +585,13 @@ const openSharePreview = (data: LogEntry[]) => {
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-10">
         {/* Elegant Header */}
         <div className="text-center space-y-4">
+          <div className="flex justify-center mb-4">
+            <img 
+              src="/logo.png" 
+              alt="OREA 85 Logo" 
+              className="h-20 w-auto object-contain"
+            />
+          </div>
           <h1 className="text-5xl font-light tracking-tight text-amber-900">
             Logbook Komisi
           </h1>
