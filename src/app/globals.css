@@ -88,7 +88,7 @@
   }
 
   .luxury-input {
-    @apply border-amber-200 bg-white text-amber-900 focus:border-amber-400 focus:ring-amber-400/20 rounded-lg;
+    @apply border-jasmine-200 bg-white text-jasmine-900 focus:border-jasmine-400 focus:ring-jasmine-400/20 rounded-lg;
     transition: all 0.2s ease;
   }
 
@@ -107,15 +107,15 @@
   }
 
   .luxury-text {
-    @apply text-amber-900;
+    @apply text-jasmine-900;
   }
 
   .luxury-text-muted {
-    @apply text-amber-700;
+    @apply text-jasmine-700;
   }
 
   .luxury-text-accent {
-    @apply text-amber-800;
+    @apply text-jasmine-800;
   }
 
   .elegant-shadow {
@@ -135,7 +135,7 @@
   }
 
   .icon-wrapper {
-    @apply w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center;
+    @apply w-8 h-8 bg-jasmine-100 rounded-lg flex items-center justify-center;
   }
 
   .icon-wrapper-dark {
@@ -162,7 +162,7 @@
 
   /* Custom focus styles */
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-white;
+    @apply focus:outline-none focus:ring-2 focus:ring-jasmine-400 focus:ring-offset-2 focus:ring-offset-white;
   }
 
   /* Luxury typography */
@@ -207,24 +207,24 @@
   }
 
   .luxury-label {
-    @apply text-sm font-medium text-amber-700;
+    @apply text-sm font-medium text-jasmine-700;
   }
 
   /* Table styling */
   .luxury-table {
-    @apply border-amber-100;
+    @apply border-jasmine-100;
   }
 
   .luxury-table-header {
-    @apply text-amber-700 font-medium;
+    @apply text-jasmine-700 font-medium;
   }
 
   .luxury-table-row {
-    @apply border-amber-100 hover:bg-amber-50 transition-colors;
+    @apply border-jasmine-100 hover:bg-jasmine-50 transition-colors;
   }
 
   .luxury-table-cell {
-    @apply text-amber-900;
+    @apply text-jasmine-900;
   }
 
   /* Card content styling */
@@ -234,24 +234,24 @@
 
   /* Button variants */
   .luxury-button-primary {
-    @apply bg-amber-900 hover:bg-amber-800 text-white;
+    @apply bg-jasmine-900 hover:bg-jasmine-800 text-white;
   }
 
   .luxury-button-secondary {
-    @apply border-amber-200 text-amber-700 hover:bg-amber-50;
+    @apply border-jasmine-200 text-jasmine-700 hover:bg-jasmine-50;
   }
 
   .luxury-button-ghost {
-    @apply text-amber-400 hover:text-amber-600 hover:bg-amber-50;
+    @apply text-jasmine-400 hover:text-jasmine-600 hover:bg-jasmine-50;
   }
 
   /* Status indicators */
   .status-indicator {
-    @apply w-2 h-2 bg-amber-300 rounded-full;
+    @apply w-2 h-2 bg-jasmine-300 rounded-full;
   }
 
   .status-indicator-active {
-    @apply bg-amber-500;
+    @apply bg-jasmine-500;
   }
 
   /* Custom Treatment Popup Styles */
@@ -265,7 +265,7 @@
   }
 
   .treatment-popup-header {
-    @apply p-6 border-b border-amber-200;
+    @apply p-6 border-b border-jasmine-200;
   }
 
   .treatment-popup-body {
@@ -277,27 +277,27 @@
   }
 
   .treatment-popup-search input {
-    @apply w-full pl-10 pr-4 py-2 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm;
+    @apply w-full pl-10 pr-4 py-2 border border-jasmine-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-jasmine-400 focus:border-transparent text-sm;
   }
 
   .treatment-popup-search-icon {
-    @apply w-4 h-4 text-amber-400 absolute left-3 top-1/2 transform -translate-y-1/2;
+    @apply w-4 h-4 text-jasmine-400 absolute left-3 top-1/2 transform -translate-y-1/2;
   }
 
   .treatment-dropdown-trigger {
-    @apply w-full border-amber-200 bg-white text-amber-900 focus:border-amber-400 focus:ring-amber-400/20 rounded-lg px-3 py-2 text-left flex items-center justify-between hover:border-amber-300 transition-colors;
+    @apply w-full border-jasmine-200 bg-white text-jasmine-900 focus:border-jasmine-400 focus:ring-jasmine-400/20 rounded-lg px-3 py-2 text-left flex items-center justify-between hover:border-jasmine-300 transition-colors;
   }
 
   .treatment-dropdown-text {
-    @apply text-amber-900;
+    @apply text-jasmine-900;
   }
 
   .treatment-dropdown-placeholder {
-    @apply text-amber-400;
+    @apply text-jasmine-400;
   }
 
   .treatment-dropdown-icon {
-    @apply w-4 h-4 text-amber-400 transition-transform;
+    @apply w-4 h-4 text-jasmine-400 transition-transform;
   }
 
   .treatment-dropdown-icon-open {
@@ -305,28 +305,28 @@
   }
 
   .treatment-dropdown-desktop-item {
-    @apply w-full text-left px-4 py-3 hover:bg-amber-50 rounded-lg transition-colors border-b border-amber-100 last:border-b-0;
+    @apply w-full text-left px-4 py-3 hover:bg-jasmine-50 rounded-lg transition-colors border-b border-jasmine-100 last:border-b-0;
   }
 
   .treatment-dropdown-item:hover .treatment-dropdown-text {
-    @apply text-amber-700;
+    @apply text-jasmine-700;
   }
 
   .treatment-dropdown-item:hover .treatment-dropdown-price {
-    @apply text-amber-600;
+    @apply text-jasmine-600;
   }
 
   /* Mobile Treatment Popup - Fullscreen Modal */
   @media (max-width: 768px) {
     .treatment-dropdown-desktop {
-      @apply fixed inset-x-4 top-20 bottom-4 bg-white rounded-lg shadow-xl border-amber-200 max-h-full max-h-[80vh];
+      @apply fixed inset-x-4 top-20 bottom-4 bg-white rounded-lg shadow-xl border-jasmine-200 max-h-full max-h-[80vh];
       display: flex;
       flex-direction: column;
       z-index: 50;
     }
     
     .treatment-dropdown-desktop .p-3 {
-      @apply p-4 border-b border-amber-200;
+      @apply p-4 border-b border-jasmine-200;
     }
     
     .treatment-dropdown-desktop .max-h-48 {
@@ -334,12 +334,12 @@
     }
     
     .treatment-dropdown-desktop-item {
-      @apply px-4 py-3 border-b border-amber-100 last:border-b-0;
+      @apply px-4 py-3 border-b border-jasmine-100 last:border-b-0;
     }
   }
 
   .treatment-dropdown-desktop-item:hover {
-    @apply bg-amber-50;
+    @apply bg-jasmine-50;
   }
 
   /* Custom scrollbar for popup */
