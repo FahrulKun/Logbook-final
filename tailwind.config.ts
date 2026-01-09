@@ -14,17 +14,16 @@ const config: Config = {
                         background: 'hsl(var(--background))',
                         foreground: 'hsl(var(--foreground))',
                         jasmine: {
-                                50: '#fefce8',
-                                100: '#fef9c3',
-                                200: '#fef08a',
-                                300: '#fde047',
-                                400: '#facc15',
-                                500: '#eab308',
-                                600: '#ca8a04',
-                                700: '#a16207',
-                        800: '#854d0e',
-                        900: '#713f12',
-                        950: '#422006',
+                                50: '#fef9e7',    // Very light jasmine
+                                100: '#fcf3cf',   // Light jasmine
+                                200: '#f9e79f',   // Soft jasmine
+                                300: '#f4d03f',   // Jasmine
+                                400: '#f1c40f',   // Bright jasmine
+                                500: '#f39c12',   // Pure jasmine
+                                600: '#e67e22',   // Deep jasmine
+                                700: '#d35400',   // Dark jasmine
+                                800: '#a04000',   // Very dark jasmine
+                                900: '#7e2f00',   // Darkest jasmine
                         },
                         card: {
                                 DEFAULT: 'hsl(var(--card))',

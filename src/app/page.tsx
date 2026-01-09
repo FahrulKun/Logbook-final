@@ -581,7 +581,7 @@ const openSharePreview = (data: LogEntry[]) => {
   const currentWeekLogs = getWeeklyLogs(currentWeekOffset);
 
   return (
-    <div key={dateUpdateTrigger} className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-50">
+    <div key={dateUpdateTrigger} className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-amber-50">
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-10">
         {/* Elegant Header */}
         <div className="text-center space-y-4">
@@ -589,16 +589,16 @@ const openSharePreview = (data: LogEntry[]) => {
             <img 
               src="/logo.png" 
               alt="OREA 85 Logo" 
-              className="h-20 w-20 object-cover rounded-full border-4 border-yellow-200 shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
+              className="h-20 w-20 object-cover rounded-full border-4 border-amber-200 shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out"
             />
           </div>
-          <h1 className="text-5xl font-light tracking-tight text-yellow-900">
+          <h1 className="text-5xl font-light tracking-tight text-amber-900">
             Logbook Komisi
           </h1>
-          <p className="text-lg text-yellow-700 font-light">
+          <p className="text-lg text-amber-700 font-light">
             Management system for treatment commissions
           </p>
-          <p className="text-sm text-yellow-600 font-light">
+          <p className="text-sm text-amber-600 font-light">
             Developed by OREA 85
           </p>
         </div>
@@ -608,16 +608,16 @@ const openSharePreview = (data: LogEntry[]) => {
           <CardHeader className="pb-6">
             <CardTitle className="text-xl font-medium luxury-text flex items-center gap-3">
               <div className="icon-wrapper">
-                <Plus className="w-4 h-4 text-yellow-600" />
+                <Plus className="w-4 h-4 text-amber-600" />
               </div>
               Add New Entry
             </CardTitle>
             {/* Digital Clock */}
             <div className="mt-4 text-center">
-              <div className="text-3xl font-light text-yellow-900 tracking-wider font-mono">
+              <div className="text-3xl font-light text-amber-900 tracking-wider font-mono">
                 {currentTimeWIB}
               </div>
-              <div className="text-sm text-yellow-600 font-light">
+              <div className="text-sm text-amber-600 font-light">
                 {getWIBDateString()}
               </div>
             </div>
@@ -625,19 +625,19 @@ const openSharePreview = (data: LogEntry[]) => {
           <CardContent>
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-5 gap-4">
               <div className="md:col-span-2 space-y-2">
-                <Label htmlFor="treatment" className="text-sm font-medium text-yellow-700">
+                <Label htmlFor="treatment" className="text-sm font-medium text-amber-700">
                   Treatment Name
                 </Label>
                 <div className="relative" ref={popupRef}>
                   <button
                     type="button"
                     onClick={() => setIsTreatmentPopupOpen(!isTreatmentPopupOpen)}
-                    className="w-full border-yellow-200 bg-white text-yellow-900 focus:border-yellow-400 focus:ring-yellow-400/20 rounded-lg px-3 py-2 text-left flex items-center justify-between hover:border-yellow-300 transition-colors"
+                    className="w-full border-amber-200 bg-white text-amber-900 focus:border-amber-400 focus:ring-amber-400/20 rounded-lg px-3 py-2 text-left flex items-center justify-between hover:border-amber-300 transition-colors"
                   >
-                    <span className={selectedTreatment ? 'text-yellow-900' : 'text-yellow-400'}>
+                    <span className={selectedTreatment ? 'text-amber-900' : 'text-amber-400'}>
                       {selectedTreatment || 'Select treatment'}
                     </span>
-                    <ChevronDown className={`w-4 h-4 text-yellow-400 transition-transform ${isTreatmentPopupOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 text-amber-400 transition-transform ${isTreatmentPopupOpen ? 'rotate-180' : ''}`} />
                   </button>
                   
                   {isTreatmentPopupOpen && (
@@ -647,27 +647,27 @@ const openSharePreview = (data: LogEntry[]) => {
                       
                       {/* Dropdown Content */}
                       <div className="treatment-dropdown-desktop popup-animation">
-                        <div className="p-3 border-b border-yellow-200 flex items-center justify-between">
+                        <div className="p-3 border-b border-amber-200 flex items-center justify-between">
                           <div className="relative flex-1 mr-3">
-                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-yellow-400" />
+                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-amber-400" />
                             <input
                               type="text"
                               placeholder="Search treatments..."
                               value={treatmentSearch}
                               onChange={(e) => setTreatmentSearch(e.target.value)}
-                              className="w-full pl-10 pr-4 py-2 border border-yellow-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-sm"
+                              className="w-full pl-10 pr-4 py-2 border border-amber-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm"
                             />
                           </div>
                           <button
                             onClick={handlePopupClose}
-                            className="p-2 hover:bg-yellow-100 rounded-lg transition-colors md:hidden"
+                            className="p-2 hover:bg-amber-100 rounded-lg transition-colors md:hidden"
                           >
-                            <X className="w-4 h-4 text-yellow-400" />
+                            <X className="w-4 h-4 text-amber-400" />
                           </button>
                         </div>
                         <div className="max-h-48 overflow-y-auto">
                           {filteredTreatments.length === 0 ? (
-                            <div className="px-3 py-4 text-center text-yellow-500 text-sm">
+                            <div className="px-3 py-4 text-center text-amber-500 text-sm">
                               No treatments found
                             </div>
                           ) : (
@@ -678,10 +678,10 @@ const openSharePreview = (data: LogEntry[]) => {
                                 className="treatment-dropdown-desktop-item w-full text-left"
                               >
                                 <div className="flex items-center justify-between">
-                                  <span className="text-sm text-yellow-900">
+                                  <span className="text-sm text-amber-900">
                                     {treatment.name}
                                   </span>
-                                  <span className="text-xs text-yellow-500">
+                                  <span className="text-xs text-amber-500">
                                     {formatCurrency(treatment.commission)}
                                   </span>
                                 </div>
@@ -1130,13 +1130,13 @@ const openSharePreview = (data: LogEntry[]) => {
         )}
         
         {/* Footer Copyright */}
-        <div className="text-center py-6 border-t border-yellow-200">
+        <div className="text-center py-6 border-t border-amber-200">
           <div className="space-y-3">
-            <p className="text-sm text-yellow-400 font-light">
+            <p className="text-sm text-amber-400 font-light">
               © Developed by OREA 85 - {format(new Date(), 'yyyy')} | All rights reserved
             </p>
             <div className="flex items-center justify-center gap-2">
-              <p className="text-sm text-yellow-600 font-bold uppercase tracking-wider">
+              <p className="text-sm text-amber-600 font-bold uppercase tracking-wider">
                 JANGAN LUPA FOLLOW INSTAGRAM
               </p>
               <a
